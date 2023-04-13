@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>MTO Page</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
+        aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of
+                        cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Go Pro -->
+
+    <!--<a href="https://webpixels.io/themes/quick-website-ui-kit" class="btn btn-block btn-dark text-truncate rounded-0 py-2 d-none d-lg-block" style="z-index: 1000;" target="_blank">
+        <strong>This is a free demo.</strong> Click here to open the full version →
+    </a> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img alt="Image placeholder" src="assets/img/brand/logo1.png" id="navbar-logo" width="100px" height="80px">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="login.html">Products Prediction</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">Data Extraction</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="docs/index.html">Text Classification</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                <div class="d-lg-none text-center">
+                    <a href="https://webpixels.io/themes/quick-website-ui-kit"
+                        class="btn btn-block btn-sm btn-warning">See more details</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!DOCTYPE html>
+
+    <!-- Main content -->
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+        <div class="container">
+            <div class="row cols-xs-space cols-sm-space cols-md-space">
+                <div class="col-lg-12">
+                    <h3 class="heading h6 text-uppercase text-primary mt-5 mb-4">Search for a Framework Type Code</h3>
+                    <form id="molecular-sieve-form">
+                        <div class="row">
+                            <div class="col">
+                                <!--<input type="text" class="form-control input-round" placeholder="Search for a code">-->
+                                <input name="molecular-sieve" id="molecular-sieve" type="text" class="form-control input-round"
+                                    placeholder="Search for a code" list="zeo" />
+                                <datalist id="zeo">
+                                    <option value="ABW">ABW</option>
+                                    <option value="ACO">ACO</option>
+                                    <option value="AEI">AEI</option>
+                                    <option value="AEL">AEL</option>
+                                    <option value="AEN">AEN</option>
+                                    <option value="AET">AET</option>
+                                    <option value="AFG">AFG</option>
+                                    <option value="AFI">AFI</option>
+                                    <option value="AFN">AFN</option>
+                                    <option value="AFO">AFO</option>
+                                    <option value="AFR">AFR</option>
+                                    <option value="AFS">AFS</option>
+                                    <option value="AFT">AFT</option>
+                                    <option value="AFV">AFV</option>
+                                    <option value="AFX">AFX</option>
+                                    <option value="AFY">AFY</option>
+                                    <option value="AHT">AHT</option>
+                                    <option value="ANA">ANA</option>
+                                    <option value="APC">APC</option>
+                                    <option value="APD">APD</option>
+                                    <option value="AST">AST</option>
+                                    <option value="ASV">ASV</option>
+                                    <option value="ATN">ATN</option>
+                                    <option value="ATO">ATO</option>
+                                    <option value="ATS">ATS</option>
+                                    <option value="ATT">ATT</option>
+                                    <option value="ATV">ATV</option>
+                                    <option value="AVE">AVE</option>
+                                    <option value="AVL">AVL</option>
+                                    <option value="AWO">AWO</option>
+                                    <option value="AWW">AWW</option>
+                                    <option value="BCT">BCT</option>
+                                    <option value="BEC">BEC</option>
+                                    <option value="BIK">BIK</option>
+                                    <option value="BOF">BOF</option>
+                                    <option value="BOG">BOG</option>
+                                    <option value="BOZ">BOZ</option>
+                                    <option value="BPH">BPH</option>
+                                    <option value="BRE">BRE</option>
+                                    <option value="BSV">BSV</option>
+                                    <option value="CAN">CAN</option>
+                                    <option value="CAS">CAS</option>
+                                    <option value="CDO">CDO</option>
+                                    <option value="CFI">CFI</option>
+                                    <option value="CGF">CGF</option>
+                                    <option value="CGS">CGS</option>
+                                    <option value="CHA">CHA</option>
+                                    <option value="CHI">CHI</option>
+                                    <option value="CLO">CLO</option>
+                                    <option value="CON">CON</option>
+                                    <option value="CSV">CSV</option>
+                                    <option value="CZP">CZP</option>
+                                    <option value="DAC">DAC</option>
+                                    <option value="DDR">DDR</option>
+                                    <option value="DFO">DFO</option>
+                                    <option value="DFT">DFT</option>
+                                    <option value="DOH">DOH</option>
+                                    <option value="DON">DON</option>
+                                    <option value="EAB">EAB</option>
+                                    <option value="EDI">EDI</option>
+                                    <option value="EEI">EEI</option>
+                                    <option value="EMT">EMT</option>
+                                    <option value="EON">EON</option>
+                                    <option value="EPI">EPI</option>
+                                    <option value="ERI">ERI</option>
+                                    <option value="ESV">ESV</option>
+                                    <option value="ETL">ETL</option>
+                                    <option value="ETR">ETR</option>
+                                    <option value="ETV">ETV</option>
+                                    <option value="EUO">EUO</option>
+                                    <option value="EWO">EWO</option>
+                                    <option value="EWS">EWS</option>
+                                    <option value="EZT">EZT</option>
+                                    <option value="FAR">FAR</option>
+                                    <option value="FAU">FAU</option>
+                                    <option value="FER">FER</option>
+                                    <option value="FRA">FRA</option>
+                                    <option value="GIS">GIS</option>
+                                    <option value="GIU">GIU</option>
+                                    <option value="GME">GME</option>
+                                    <option value="GON">GON</option>
+                                    <option value="GOO">GOO</option>
+                                    <option value="HEU">HEU</option>
+                                    <option value="IFO">IFO</option>
+                                    <option value="IFR">IFR</option>
+                                    <option value="IFT">IFT</option>
+                                    <option value="IFU">IFU</option>
+                                    <option value="IFW">IFW</option>
+                                    <option value="IFY">IFY</option>
+                                    <option value="IHW">IHW</option>
+                                    <option value="IMF">IMF</option>
+                                    <option value="IRN">IRN</option>
+                                    <option value="IRR">IRR</option>
+                                    <option value="IRY">IRY</option>
+                                    <option value="ISV">ISV</option>
+                                    <option value="ITE">ITE</option>
+                                    <option value="ITG">ITG</option>
+                                    <option value="ITH">ITH</option>
+                                    <option value="ITR">ITR</option>
+                                    <option value="ITT">ITT</option>
+                                    <option value="ITV">ITV</option>
+                                    <option value="ITW">ITW</option>
+                                    <option value="IWR">IWR</option>
+                                    <option value="IWS">IWS</option>
+                                    <option value="IWV">IWV</option>
+                                    <option value="IWW">IWW</option>
+                                    <option value="JBW">JBW</option>
+                                    <option value="JNT">JNT</option>
+                                    <option value="JOZ">JOZ</option>
+                                    <option value="JRY">JRY</option>
+                                    <option value="JSN">JSN</option>
+                                    <option value="JSR">JSR</option>
+                                    <option value="JST">JST</option>
+                                    <option value="JSW">JSW</option>
+                                    <option value="KFI">KFI</option>
+                                    <option value="LAU">LAU</option>
+                                    <option value="LEV">LEV</option>
+                                    <option value="LIO">LIO</option>
+                                    <option value="LIT">LIT</option>
+                                    <option value="LOS">LOS</option>
+                                    <option value="LOV">LOV</option>
+                                    <option value="LTA">LTA</option>
+                                    <option value="LTF">LTF</option>
+                                    <option value="LTJ">LTJ</option>
+                                    <option value="LTL">LTL</option>
+                                    <option value="LTN">LTN</option>
+                                    <option value="MAR">MAR</option>
+                                    <option value="MAZ">MAZ</option>
+                                    <option value="MEI">MEI</option>
+                                    <option value="MEL">MEL</option>
+                                    <option value="MEP">MEP</option>
+                                    <option value="MER">MER</option>
+                                    <option value="MFI">MFI</option>
+                                    <option value="MFS">MFS</option>
+                                    <option value="MON">MON</option>
+                                    <option value="MOR">MOR</option>
+                                    <option value="MOZ">MOZ</option>
+                                    <option value="MRT">MRT</option>
+                                    <option value="MSE">MSE</option>
+                                    <option value="MSO">MSO</option>
+                                    <option value="MTF">MTF</option>
+                                    <option value="MTN">MTN</option>
+                                    <option value="MTT">MTT</option>
+                                    <option value="MTW">MTW</option>
+                                    <option value="MVY">MVY</option>
+                                    <option value="MWF">MWF</option>
+                                    <option value="MWW">MWW</option>
+                                    <option value="NAB">NAB</option>
+                                    <option value="NAT">NAT</option>
+                                    <option value="NES">NES</option>
+                                    <option value="NON">NON</option>
+                                    <option value="NPO">NPO</option>
+                                    <option value="NPT">NPT</option>
+                                    <option value="NSI">NSI</option>
+                                    <option value="OBW">OBW</option>
+                                    <option value="OFF">OFF</option>
+                                    <option value="OKO">OKO</option>
+                                    <option value="OSI">OSI</option>
+                                    <option value="OSO">OSO</option>
+                                    <option value="OWE">OWE</option>
+                                    <option value="PAR">PAR</option>
+                                    <option value="PAU">PAU</option>
+                                    <option value="PCR">PCR</option>
+                                    <option value="PHI">PHI</option>
+                                    <option value="PON">PON</option>
+                                    <option value="POR">POR</option>
+                                    <option value="POS">POS</option>
+                                    <option value="PSI">PSI</option>
+                                    <option value="PTT">PTT</option>
+                                    <option value="PTY">PTY</option>
+                                    <option value="PUN">PUN</option>
+                                    <option value="PWN">PWN</option>
+                                    <option value="PWO">PWO</option>
+                                    <option value="PWW">PWW</option>
+                                    <option value="RHO">RHO</option>
+                                    <option value="RON">RON</option>
+                                    <option value="RRO">RRO</option>
+                                    <option value="RSN">RSN</option>
+                                    <option value="RTE">RTE</option>
+                                    <option value="RTH">RTH</option>
+                                    <option value="RUT">RUT</option>
+                                    <option value="RWR">RWR</option>
+                                    <option value="RWY">RWY</option>
+                                    <option value="SAF">SAF</option>
+                                    <option value="SAO">SAO</option>
+                                    <option value="SAS">SAS</option>
+                                    <option value="SAT">SAT</option>
+                                    <option value="SAV">SAV</option>
+                                    <option value="SBE">SBE</option>
+                                    <option value="SBN">SBN</option>
+                                    <option value="SBS">SBS</option>
+                                    <option value="SBT">SBT</option>
+                                    <option value="SEW">SEW</option>
+                                    <option value="SFE">SFE</option>
+                                    <option value="SFF">SFF</option>
+                                    <option value="SFG">SFG</option>
+                                    <option value="SFH">SFH</option>
+                                    <option value="SFN">SFN</option>
+                                    <option value="SFO">SFO</option>
+                                    <option value="SFS">SFS</option>
+                                    <option value="SFW">SFW</option>
+                                    <option value="SGT">SGT</option>
+                                    <option value="SIV">SIV</option>
+                                    <option value="SOD">SOD</option>
+                                    <option value="SOF">SOF</option>
+                                    <option value="SOR">SOR</option>
+                                    <option value="SOS">SOS</option>
+                                    <option value="SOV">SOV</option>
+                                    <option value="SSF">SSF</option>
+                                    <option value="SSY">SSY</option>
+                                    <option value="STF">STF</option>
+                                    <option value="STI">STI</option>
+                                    <option value="STT">STT</option>
+                                    <option value="STW">STW</option>
+                                    <option value="SVR">SVR</option>
+                                    <option value="SVV">SVV</option>
+                                    <option value="SWY">SWY</option>
+                                    <option value="SYT">SYT</option>
+                                    <option value="SZR">SZR</option>
+                                    <option value="TER">TER</option>
+                                    <option value="THO">THO</option>
+                                    <option value="TOL">TOL</option>
+                                    <option value="TON">TON</option>
+                                    <option value="TSC">TSC</option>
+                                    <option value="TUN">TUN</option>
+                                    <option value="UEI">UEI</option>
+                                    <option value="UFI">UFI</option>
+                                    <option value="UOS">UOS</option>
+                                    <option value="UOV">UOV</option>
+                                    <option value="UOZ">UOZ</option>
+                                    <option value="USI">USI</option>
+                                    <option value="UTL">UTL</option>
+                                    <option value="UWY">UWY</option>
+                                    <option value="VET">VET</option>
+                                    <option value="VFI">VFI</option>
+                                    <option value="VNI">VNI</option>
+                                    <option value="VSV">VSV</option>
+                                    <option value="WEI">WEI</option>
+                                    <option value="WEN">WEN</option>
+                                    <option value="YFI">YFI</option>
+                                    <option value="YUG">YUG</option>
+                                    <option value="ZON">ZON</option>
+                                </datalist>
+                                <small id="emailHelp" class="form-text text-muted">Enter one character to search for a code or material name.</small>
+                            </div>
+                            <div class="col">
+                                <input type="submit" class="btn btn-primary btn-round" value="Search">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row cols-xs-space cols-sm-space cols-md-space">
+                        <div class="col-lg-12">
+                            <h3 class="heading h6 text-uppercase text-primary mt-5 mb-4">Or select one from the table below:</h3>
+                            <div class="btn-container">
+                                <a href= "./freamwork/ABW.html" <button type="button" class="btn btn-secondary btn-icon-only">ABW</button></a>
+                                <a href= "./freamwork/ACO.html" <button type="button" class="btn btn-secondary btn-icon-only">ACO</button></a>
+                                <a href= "./freamwork/AEI.html" <button type="button" class="btn btn-primary btn-icon-only">AEI</button></a>
+                                <a href= "./freamwork/AEL.html" <button type="button" class="btn btn-primary btn-icon-only">AEL</button></a>
+                                <a href= "./freamwork/AEN.html" <button type="button" class="btn btn-secondary btn-icon-only">AEN</button></a>
+                                <a href= "./freamwork/AET.html" <button type="button" class="btn btn-secondary btn-icon-only">AET</button></a>
+                                <a href= "./freamwork/AFG.html" <button type="button" class="btn btn-secondary btn-icon-only">AFG</button></a>
+                                <a href= "./freamwork/AFI.html" <button type="button" class="btn btn-primary btn-icon-only">AFI</button></a>
+                                <a href= "./freamwork/AFN.html" <button type="button" class="btn btn-primary btn-icon-only">AFN</button></a>
+                                <a href= "./freamwork/AFO.html" <button type="button" class="btn btn-secondary btn-icon-only">AFO</button></a>
+                                <a href= "./freamwork/AFR.html" <button type="button" class="btn btn-secondary btn-icon-only">AFR</button></a>
+                                <a href= "./freamwork/AFS.html" <button type="button" class="btn btn-secondary btn-icon-only">AFS</button></a>
+                                <a href= "./freamwork/AFT.html" <button type="button" class="btn btn-secondary btn-icon-only">AFT</button></a>
+                                <a href= "./freamwork/AFV.html" <button type="button" class="btn btn-primary btn-icon-only">AFV</button></a>
+                                <a href= "./freamwork/AFX.html" <button type="button" class="btn btn-primary btn-icon-only">AFX</button></a>
+                                <a href= "./freamwork/AFY.html" <button type="button" class="btn btn-secondary btn-icon-only">AFY</button></a>
+                                <a href= "./freamwork/AHT.html" <button type="button" class="btn btn-secondary btn-icon-only">AHT</button></a>
+                                <a href= "./freamwork/ANA.html" <button type="button" class="btn btn-secondary btn-icon-only">ANA</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/ANO.html" <button type="button" class="btn btn-secondary btn-icon-only">ANO</button></a>
+                                <a href= "./freamwork/APC.html" <button type="button" class="btn btn-secondary btn-icon-only">APC</button></a>
+                                <a href= "./freamwork/APD.html" <button type="button" class="btn btn-secondary btn-icon-only">APD</button></a>
+                                <a href= "./freamwork/AST.html" <button type="button" class="btn btn-secondary btn-icon-only">AST</button></a>
+                                <a href= "./freamwork/ASV.html" <button type="button" class="btn btn-secondary btn-icon-only">ASV</button></a>
+                                <a href= "./freamwork/ATN.html" <button type="button" class="btn btn-primary btn-icon-only">ATN</button></a>
+                                <a href= "./freamwork/ATO.html" <button type="button" class="btn btn-secondary btn-icon-only">ATO</button></a>
+                                <a href= "./freamwork/ATS.html" <button type="button" class="btn btn-secondary btn-icon-only">ATS</button></a>
+                                <a href= "./freamwork/ATT.html" <button type="button" class="btn btn-secondary btn-icon-only">ATT</button></a>
+                                <a href= "./freamwork/ATV.html" <button type="button" class="btn btn-secondary btn-icon-only">ATV</button></a>
+                                <a href= "./freamwork/AVE.html" <button type="button" class="btn btn-secondary btn-icon-only">AVE</button></a>
+                                <a href= "./freamwork/AVL.html" <button type="button" class="btn btn-primary btn-icon-only">AVL</button></a>
+                                <a href= "./freamwork/AWO.html" <button type="button" class="btn btn-secondary btn-icon-only">AWO</button></a>
+                                <a href= "./freamwork/AWW.html" <button type="button" class="btn btn-secondary btn-icon-only">AWW</button></a>
+                                <a href= "./freamwork/BCT.html" <button type="button" class="btn btn-secondary btn-icon-only">BCT</button></a>
+                                <a href= "./freamwork/BEA.html" <button type="button" class="btn btn-primary btn-icon-only">BEA</button></a>
+                                <a href= "./freamwork/BEC.html" <button type="button" class="btn btn-secondary btn-icon-only">BEC</button></a>
+                                <a href= "./freamwork/BIK.html" <button type="button" class="btn btn-secondary btn-icon-only">BIK</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/BOF.html" <button type="button" class="btn btn-secondary btn-icon-only">BOF</button></a>
+                                <a href= "./freamwork/BOG.html" <button type="button" class="btn btn-secondary btn-icon-only">BOG</button></a>
+                                <a href= "./freamwork/BOZ.html" <button type="button" class="btn btn-secondary btn-icon-only">BOZ</button></a>
+                                <a href= "./freamwork/BPH.html" <button type="button" class="btn btn-secondary btn-icon-only">BPH</button></a>
+                                <a href= "./freamwork/BRE.html" <button type="button" class="btn btn-secondary btn-icon-only">BRE</button></a>
+                                <a href= "./freamwork/BSV.html" <button type="button" class="btn btn-secondary btn-icon-only">BSV</button></a>
+                                <a href= "./freamwork/CAN.html" <button type="button" class="btn btn-secondary btn-icon-only">CAN</button></a>
+                                <a href= "./freamwork/CAS.html" <button type="button" class="btn btn-secondary btn-icon-only">CAS</button></a>
+                                <a href= "./freamwork/CDO.html" <button type="button" class="btn btn-secondary btn-icon-only">CDO</button></a>
+                                <a href= "./freamwork/CFI.html" <button type="button" class="btn btn-secondary btn-icon-only">CFI</button></a>
+                                <a href= "./freamwork/CGF.html" <button type="button" class="btn btn-secondary btn-icon-only">CGF</button></a>
+                                <a href= "./freamwork/CGS.html" <button type="button" class="btn btn-secondary btn-icon-only">CGS</button></a>
+                                <a href= "./freamwork/CHA.html" <button type="button" class="btn btn-primary btn-icon-only">CHA</button></a>
+                                <a href= "./freamwork/CHI.html" <button type="button" class="btn btn-secondary btn-icon-only">CHI</button></a>
+                                <a href= "./freamwork/CLO.html" <button type="button" class="btn btn-secondary btn-icon-only">CLO</button></a>
+                                <a href= "./freamwork/CON.html" <button type="button" class="btn btn-primary btn-icon-only">CON</button></a>
+                                <a href= "./freamwork/CSV.html" <button type="button" class="btn btn-secondary btn-icon-only">CSV</button></a>
+                                <a href= "./freamwork/CTH.html" <button type="button" class="btn btn-secondary btn-icon-only">CTH</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/CZP.html" <button type="button" class="btn btn-secondary btn-icon-only">CZP</button></a>
+                                <a href= "./freamwork/DAC.html" <button type="button" class="btn btn-secondary btn-icon-only">DAC</button></a>
+                                <a href= "./freamwork/DDR.html" <button type="button" class="btn btn-primary btn-icon-only">DDR</button></a>
+                                <a href= "./freamwork/DFO.html" <button type="button" class="btn btn-secondary btn-icon-only">DFO</button></a>
+                                <a href= "./freamwork/DFT.html" <button type="button" class="btn btn-secondary btn-icon-only">DFT</button></a>
+                                <a href= "./freamwork/DOH.html" <button type="button" class="btn btn-secondary btn-icon-only">DOH</button></a>
+                                <a href= "./freamwork/DON.html" <button type="button" class="btn btn-secondary btn-icon-only">DON</button></a>
+                                <a href= "./freamwork/EAB.html" <button type="button" class="btn btn-secondary btn-icon-only">EAB</button></a>
+                                <a href= "./freamwork/EDI.html" <button type="button" class="btn btn-secondary btn-icon-only">EDI</button></a>
+                                <a href= "./freamwork/EEI.html" <button type="button" class="btn btn-secondary btn-icon-only">EEI</button></a>
+                                <a href= "./freamwork/EMT.html" <button type="button" class="btn btn-secondary btn-icon-only">EMT</button></a>
+                                <a href= "./freamwork/EON.html" <button type="button" class="btn btn-secondary btn-icon-only">EON</button></a>
+                                <a href= "./freamwork/EPI.html" <button type="button" class="btn btn-secondary btn-icon-only">EPI</button></a>
+                                <a href= "./freamwork/ERI.html" <button type="button" class="btn btn-primary btn-icon-only">ERI</button></a>
+                                <a href= "./freamwork/ESV.html" <button type="button" class="btn btn-secondary btn-icon-only">ESV</button></a>
+                                <a href= "./freamwork/ETL.html" <button type="button" class="btn btn-secondary btn-icon-only">ETL</button></a>
+                                <a href= "./freamwork/ETR.html" <button type="button" class="btn btn-secondary btn-icon-only">ETR</button></a>
+                                <a href= "./freamwork/ETV.html" <button type="button" class="btn btn-secondary btn-icon-only">ETV</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/EUO.html" <button type="button" class="btn btn-primary btn-icon-only">EUO</button></a>
+                                <a href= "./freamwork/EWO.html" <button type="button" class="btn btn-secondary btn-icon-only">EWO</button></a>
+                                <a href= "./freamwork/EWS.html" <button type="button" class="btn btn-secondary btn-icon-only">EWS</button></a>
+                                <a href= "./freamwork/EWT.html" <button type="button" class="btn btn-secondary btn-icon-only">EWT</button></a>
+                                <a href= "./freamwork/EDI.html" <button type="button" class="btn btn-secondary btn-icon-only">EDI</button></a>
+                                <a href= "./freamwork/EEI.html" <button type="button" class="btn btn-secondary btn-icon-only">EEI</button></a>
+                                <a href= "./freamwork/EMT.html" <button type="button" class="btn btn-secondary btn-icon-only">EMT</button></a>
+                                <a href= "./freamwork/EON.html" <button type="button" class="btn btn-secondary btn-icon-only">EON</button></a>
+                                <a href= "./freamwork/EPI.html" <button type="button" class="btn btn-secondary btn-icon-only">EPI</button></a>
+                                <a href= "./freamwork/ERI.html" <button type="button" class="btn btn-secondary btn-icon-only">ERI</button></a>
+                                <a href= "./freamwork/ESV.html" <button type="button" class="btn btn-secondary btn-icon-only">ESV</button></a>
+                                <a href= "./freamwork/ETL.html" <button type="button" class="btn btn-secondary btn-icon-only">ETL</button></a>
+                                <a href= "./freamwork/ETR.html" <button type="button" class="btn btn-secondary btn-icon-only">ETR</button></a>
+                                <a href= "./freamwork/ETV.html" <button type="button" class="btn btn-secondary btn-icon-only">ETV</button></a>
+                                <a href= "./freamwork/EUO.html" <button type="button" class="btn btn-secondary btn-icon-only">EUO</button></a>
+                                <a href= "./freamwork/EWF.html" <button type="button" class="btn btn-secondary btn-icon-only">EWF</button></a>
+                                <a href= "./freamwork/EWO.html" <button type="button" class="btn btn-secondary btn-icon-only">EWO</button></a>
+                                <a href= "./freamwork/EWS.html" <button type="button" class="btn btn-secondary btn-icon-only">EWS</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/EWT.html" <button type="button" class="btn btn-secondary btn-icon-only">EWT</button></a>
+                                <a href= "./freamwork/EZT.html" <button type="button" class="btn btn-secondary btn-icon-only">EZT</button></a>
+                                <a href= "./freamwork/FAR.html" <button type="button" class="btn btn-secondary btn-icon-only">FAR</button></a>
+                                <a href= "./freamwork/FAU.html" <button type="button" class="btn btn-primary btn-icon-only">FAU</button></a>
+                                <a href= "./freamwork/FER.html" <button type="button" class="btn btn-primary btn-icon-only">FER</button></a>
+                                <a href= "./freamwork/FRA.html"  <button type="button" class="btn btn-secondary btn-icon-only">FRA</button></a>
+                                <a href= "./freamwork/GIS.html" <button type="button" class="btn btn-secondary btn-icon-only">GIS</button></a>
+                                <a href= "./freamwork/GIU.html" <button type="button" class="btn btn-secondary btn-icon-only">GIU</button></a>
+                                <a href= "./freamwork/GME.html" <button type="button" class="btn btn-secondary btn-icon-only">GME</button></a>
+                                <a href= "./freamwork/GON.html" <button type="button" class="btn btn-secondary btn-icon-only">GON</button></a>
+                                <a href= "./freamwork/GOO.html" <button type="button" class="btn btn-secondary btn-icon-only">GOO</button></a>
+                                <a href= "./freamwork/HEU.html" <button type="button" class="btn btn-secondary btn-icon-only">HEU</button></a>
+                                <a href= "./freamwork/HOS.html" <button type="button" class="btn btn-secondary btn-icon-only">HOS</button></a>
+                                <a href= "./freamwork/IFO.html" <button type="button" class="btn btn-secondary btn-icon-only">IFO</button></a>
+                                <a href= "./freamwork/IFR.html" <button type="button" class="btn btn-secondary btn-icon-only">IFR</button></a>
+                                <a href= "./freamwork/IFT.html" <button type="button" class="btn btn-secondary btn-icon-only">IFT</button></a>
+                                <a href= "./freamwork/IFU.html" <button type="button" class="btn btn-secondary btn-icon-only">IFU</button></a>
+                                <a href= "./freamwork/IFW.html" <button type="button" class="btn btn-primary btn-icon-only">IFW</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/IFY.html" <button type="button" class="btn btn-secondary btn-icon-only">IFY</button></a>
+                                <a href= "./freamwork/IHW.html" <button type="button" class="btn btn-secondary btn-icon-only">IHW</button></a>
+                                <a href= "./freamwork/IMF.html" <button type="button" class="btn btn-secondary btn-icon-only">IMF</button></a>
+                                <a href= "./freamwork/IRN.html" <button type="button" class="btn btn-secondary btn-icon-only">IRN</button></a>
+                                <a href= "./freamwork/IRR.html" <button type="button" class="btn btn-secondary btn-icon-only">IRR</button></a>
+                                <a href= "./freamwork/IRT.html" <button type="button" class="btn btn-secondary btn-icon-only">IRT</button></a>
+                                <a href= "./freamwork/IRY.html" <button type="button" class="btn btn-secondary btn-icon-only">IRY</button></a>
+                                <a href= "./freamwork/ISV.html" <button type="button" class="btn btn-secondary btn-icon-only">ISV</button></a>
+                                <a href= "./freamwork/ITE.html" <button type="button" class="btn btn-primary btn-icon-only">ITE</button></a>
+                                <a href= "./freamwork/ITG.html" <button type="button" class="btn btn-secondary btn-icon-only">ITG</button></a>
+                                <a href= "./freamwork/ITH.html" <button type="button" class="btn btn-primary btn-icon-only">ITH</button></a>
+                                <a href= "./freamwork/ITN.html" <button type="button" class="btn btn-secondary btn-icon-only">ITN</button></a>
+                                <a href= "./freamwork/ITR.html" <button type="button" class="btn btn-secondary btn-icon-only">ITR</button></a>
+                                <a href= "./freamwork/ITT.html" <button type="button" class="btn btn-primary btn-icon-only">ITT</button></a>
+                                <a href= "./freamwork/ITV.html" <button type="button" class="btn btn-secondary btn-icon-only">ITV</button></a>
+                                <a href= "./freamwork/ITW.html" <button type="button" class="btn btn-secondary btn-icon-only">ITW</button></a>
+                                <a href= "./freamwork/IWR.html" <button type="button" class="btn btn-primary btn-icon-only">IWR</button></a>
+                                <a href= "./freamwork/IWS.html" <button type="button" class="btn btn-secondary btn-icon-only">IWS</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/IWV.html" <button type="button" class="btn btn-secondary btn-icon-only">IWV</button></a>
+                                <a href= "./freamwork/IWW.html" <button type="button" class="btn btn-secondary btn-icon-only">IWW</button></a>
+                                <a href= "./freamwork/JBW.html" <button type="button" class="btn btn-secondary btn-icon-only">JBW</button></a>
+                                <a href= "./freamwork/JNT.html" <button type="button" class="btn btn-secondary btn-icon-only">JNT</button></a>
+                                <a href= "./freamwork/JOZ.html" <button type="button" class="btn btn-secondary btn-icon-only">JOZ</button></a>
+                                <a href= "./freamwork/JRY.html" <button type="button" class="btn btn-secondary btn-icon-only">JRY</button></a>
+                                <a href= "./freamwork/JSN.html" <button type="button" class="btn btn-secondary btn-icon-only">JSN</button></a>
+                                <a href= "./freamwork/JSR.html" <button type="button" class="btn btn-secondary btn-icon-only">JSR</button></a>
+                                <a href= "./freamwork/JST.html" <button type="button" class="btn btn-secondary btn-icon-only">JST</button></a>
+                                <a href= "./freamwork/JSW.html" <button type="button" class="btn btn-secondary btn-icon-only">JSW</button></a>
+                                <a href= "./freamwork/JZO.html" <button type="button" class="btn btn-secondary btn-icon-only">JZO</button></a>
+                                <a href= "./freamwork/KFI.html" <button type="button" class="btn btn-primary btn-icon-only">KFI</button></a>
+                                <a href= "./freamwork/LAU.html" <button type="button" class="btn btn-secondary btn-icon-only">LAU</button></a>
+                                <a href= "./freamwork/LEV.html" <button type="button" class="btn btn-primary btn-icon-only">LEV</button></a>
+                                <a href= "./freamwork/LIO.html" <button type="button" class="btn btn-secondary btn-icon-only">LIO</button></a>
+                                <a href= "./freamwork/LIT.html" <button type="button" class="btn btn-secondary btn-icon-only">LIT</button></a>
+                                <a href= "./freamwork/LOS.html" <button type="button" class="btn btn-secondary btn-icon-only">LOS</button></a>
+                                <a href= "./freamwork/LOV.html" <button type="button" class="btn btn-secondary btn-icon-only">LOV</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/LTA.html" <button type="button" class="btn btn-primary btn-icon-only">LTA</button></a>
+                                <a href= "./freamwork/LTF.html" <button type="button" class="btn btn-secondary btn-icon-only">LTF</button></a>
+                                <a href= "./freamwork/LTJ.html" <button type="button" class="btn btn-secondary btn-icon-only">LTJ</button></a>
+                                <a href= "./freamwork/LTL.html" <button type="button" class="btn btn-secondary btn-icon-only">LTL</button></a>
+                                <a href= "./freamwork/LTN.html" <button type="button" class="btn btn-secondary btn-icon-only">LTN</button></a>
+                                <a href= "./freamwork/MAR.html" <button type="button" class="btn btn-secondary btn-icon-only">MAR</button></a>
+                                <a href= "./freamwork/MAZ.html" <button type="button" class="btn btn-secondary btn-icon-only">MAZ</button></a>
+                                <a href= "./freamwork/MEI.html" <button type="button" class="btn btn-secondary btn-icon-only">MEI</button></a>
+                                <a href= "./freamwork/MEL.html" <button type="button" class="btn btn-primary btn-icon-only">MEL</button></a>
+                                <a href= "./freamwork/MEP.html" <button type="button" class="btn btn-secondary btn-icon-only">MEP</button></a>
+                                <a href= "./freamwork/MER.html" <button type="button" class="btn btn-secondary btn-icon-only">MER</button></a>
+                                <a href= "./freamwork/MFI.html" <button type="button" class="btn btn-primary btn-icon-only">MFI</button></a>
+                                <a href= "./freamwork/MFS.html" <button type="button" class="btn btn-secondary btn-icon-only">MFS</button></a>
+                                <a href= "./freamwork/MON.html" <button type="button" class="btn btn-secondary btn-icon-only">MON</button></a>
+                                <a href= "./freamwork/MOR.html" <button type="button" class="btn btn-primary btn-icon-only">MOR</button></a>
+                                <a href= "./freamwork/MOZ.html" <button type="button" class="btn btn-secondary btn-icon-only">MOZ</button></a>
+                                <a href= "./freamwork/MRE.html" <button type="button" class="btn btn-primary btn-icon-only">MRE</button></a>
+                                <a href= "./freamwork/MRT.html" <button type="button" class="btn btn-secondary btn-icon-only">MRT</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/MSE.html" <button type="button" class="btn btn-secondary btn-icon-only">MSE</button></a>
+                                <a href= "./freamwork/MSO.html" <button type="button" class="btn btn-secondary btn-icon-only">MSO</button></a>
+                                <a href= "./freamwork/MTF.html" <button type="button" class="btn btn-secondary btn-icon-only">MTF</button></a>
+                                <a href= "./freamwork/MTN.html" <button type="button" class="btn btn-secondary btn-icon-only">MTN</button></a>
+                                <a href= "./freamwork/MTT.html" <button type="button" class="btn btn-secondary btn-icon-only">MTT</button></a>
+                                <a href= "./freamwork/MTW.html" <button type="button" class="btn btn-primary btn-icon-only">MTW</button></a>
+                                <a href= "./freamwork/MVY.html" <button type="button" class="btn btn-secondary btn-icon-only">MVY</button></a>
+                                <a href= "./freamwork/MWF.html" <button type="button" class="btn btn-secondary btn-icon-only">MWF</button></a>
+                                <a href= "./freamwork/MWW.html" <button type="button" class="btn btn-primary btn-icon-only">MWW</button></a>
+                                <a href= "./freamwork/NAB.html" <button type="button" class="btn btn-secondary btn-icon-only">NAB</button></a>
+                                <a href= "./freamwork/NAT.html" <button type="button" class="btn btn-secondary btn-icon-only">NAT</button></a>
+                                <a href= "./freamwork/NES.html" <button type="button" class="btn btn-secondary btn-icon-only">NES</button></a>
+                                <a href= "./freamwork/NON.html" <button type="button" class="btn btn-secondary btn-icon-only">NON</button></a>
+                                <a href= "./freamwork/NPO.html" <button type="button" class="btn btn-secondary btn-icon-only">NPO</button></a>
+                                <a href= "./freamwork/NPT.html" <button type="button" class="btn btn-secondary btn-icon-only">NPT</button></a>
+                                <a href= "./freamwork/NSI.html" <button type="button" class="btn btn-secondary btn-icon-only">NSI</button></a>
+                                <a href= "./freamwork/OBW.html" <button type="button" class="btn btn-secondary btn-icon-only">OBW</button></a>
+                                <a href= "./freamwork/OFF.html" <button type="button" class="btn btn-secondary btn-icon-only">OFF</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/OKO.html" <button type="button" class="btn btn-secondary btn-icon-only">OKO</button></a>
+                                <a href= "./freamwork/OSI.html" <button type="button" class="btn btn-secondary btn-icon-only">OSI</button></a>
+                                <a href= "./freamwork/OSO.html" <button type="button" class="btn btn-secondary btn-icon-only">OSO</button></a>
+                                <a href= "./freamwork/OWE.html" <button type="button" class="btn btn-secondary btn-icon-only">OWE</button></a>
+                                <a href= "./freamwork/PAR.html" <button type="button" class="btn btn-secondary btn-icon-only">PAR</button></a>
+                                <a href= "./freamwork/PAU.html" <button type="button" class="btn btn-secondary btn-icon-only">PAU</button></a>
+                                <a href= "./freamwork/PCR.html" <button type="button" class="btn btn-secondary btn-icon-only">PCR</button></a>
+                                <a href= "./freamwork/PCS.html" <button type="button" class="btn btn-secondary btn-icon-only">PCS</button></a>
+                                <a href= "./freamwork/PHI.html" <button type="button" class="btn btn-secondary btn-icon-only">PHI</button></a>
+                                <a href= "./freamwork/PON.html" <button type="button" class="btn btn-secondary btn-icon-only">PON</button></a>
+                                <a href= "./freamwork/POR.html" <button type="button" class="btn btn-secondary btn-icon-only">POR</button></a>
+                                <a href= "./freamwork/POS.html" <button type="button" class="btn btn-secondary btn-icon-only">POS</button></a>
+                                <a href= "./freamwork/PSI.html" <button type="button" class="btn btn-secondary btn-icon-only">PSI</button></a>
+                                <a href= "./freamwork/PTF.html" <button type="button" class="btn btn-secondary btn-icon-only">PTF</button></a>
+                                <a href= "./freamwork/PTO.html" <button type="button" class="btn btn-secondary btn-icon-only">PTO</button></a>
+                                <a href= "./freamwork/PTT.html" <button type="button" class="btn btn-secondary btn-icon-only">PTT</button></a>
+                                <a href= "./freamwork/PTY.html" <button type="button" class="btn btn-secondary btn-icon-only">PTY</button></a>
+                                <a href= "./freamwork/PUN.html" <button type="button" class="btn btn-secondary btn-icon-only">PUN</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/PWN.html" <button type="button" class="btn btn-secondary btn-icon-only">PWN</button></a>
+                                <a href= "./freamwork/PWO.html" <button type="button" class="btn btn-secondary btn-icon-only">PWO</button></a>
+                                <a href= "./freamwork/PWW.html" <button type="button" class="btn btn-secondary btn-icon-only">PWW</button></a>
+                                <a href= "./freamwork/RHO.html" <button type="button" class="btn btn-primary btn-icon-only">RHO</button></a>
+                                <a href= "./freamwork/RON.html" <button type="button" class="btn btn-secondary btn-icon-only">RON</button></a>
+                                <a href= "./freamwork/RRO.html" <button type="button" class="btn btn-secondary btn-icon-only">RRO</button></a>
+                                <a href= "./freamwork/RSN.html" <button type="button" class="btn btn-secondary btn-icon-only">RSN</button></a>
+                                <a href= "./freamwork/RTE.html" <button type="button" class="btn btn-secondary btn-icon-only">RTE</button></a>
+                                <a href= "./freamwork/RTH.html" <button type="button" class="btn btn-primary btn-icon-only">RTH</button></a>
+                                <a href= "./freamwork/RUT.html" <button type="button" class="btn btn-secondary btn-icon-only">RUT</button></a>
+                                <a href= "./freamwork/RWR.html" <button type="button" class="btn btn-secondary btn-icon-only">RWR</button></a>
+                                <a href= "./freamwork/RWY.html" <button type="button" class="btn btn-secondary btn-icon-only">RWY</button></a>
+                                <a href= "./freamwork/SAF.html" <button type="button" class="btn btn-secondary btn-icon-only">SAF</button></a>
+                                <a href= "./freamwork/SAO.html" <button type="button" class="btn btn-secondary btn-icon-only">SAO</button></a>
+                                <a href= "./freamwork/SAS.html" <button type="button" class="btn btn-secondary btn-icon-only">SAS</button></a>
+                                <a href= "./freamwork/SAT.html" <button type="button" class="btn btn-secondary btn-icon-only">SAT</button></a>
+                                <a href= "./freamwork/SAV.html" <button type="button" class="btn btn-primary btn-icon-only">SAV</button></a>
+                                <a href= "./freamwork/SBE.html" <button type="button" class="btn btn-secondary btn-icon-only">SBE</button></a>
+                            </div>
+                            <br/>
+                            <div class="btn-container">
+                                <a href= "./freamwork/SBN.html" <button type="button" class="btn btn-secondary btn-icon-only">SBN</button></a>
+                                <a href= "./freamwork/SBS.html" <button type="button" class="btn btn-secondary btn-icon-only">SBS</button></a>
+                                <a href= "./freamwork/SBT.html" <button type="button" class="btn btn-secondary btn-icon-only">SBT</button></a>
+                                <a href= "./freamwork/SEW.html" <button type="button" class="btn btn-secondary btn-icon-only">SEW</button></a>
+                                <a href= "./freamwork/SFE.html" <button type="button" class="btn btn-secondary btn-icon-only">SFE</button></a>
+                                <a href= "./freamwork/SFF.html" <button type="button" class="btn btn-secondary btn-icon-only">SFF</button></a>
+                                <a href= "./freamwork/SFG.html" <button type="button" class="btn btn-secondary btn-icon-only">SFG</button></a>
+                                <a href= "./freamwork/SFH.html" <button type="button" class="btn btn-secondary btn-icon-only">SFH</button></a>
+                                <a href= "./freamwork/SFN.html" <button type="button" class="btn btn-secondary btn-icon-only">SFN</button></a>
+                                <a href= "./freamwork/SFO.html" <button type="button" class="btn btn-secondary btn-icon-only">SFO</button></a>
+                                <a href= "./freamwork/SFS.html" <button type="button" class="btn btn-secondary btn-icon-only">SFS</button></a>
+                                <a href= "./freamwork/SFV.html" <button type="button" class="btn btn-secondary btn-icon-only">SFV</button></a>
+                                <a href= "./freamwork/SFW.html" <button type="button" class="btn btn-primary btn-icon-only">SFW</button></a>
+                                <a href= "./freamwork/SGT.html" <button type="button" class="btn btn-secondary btn-icon-only">SGT</button></a>
+                                <a href= "./freamwork/SIV.html" <button type="button" class="btn btn-secondary btn-icon-only">SIV</button></a>
+                                <a href= "./freamwork/SOD.html" <button type="button" class="btn btn-secondary btn-icon-only">SOD</button></a>
+                                <a href= "./freamwork/SOF.html" <button type="button" class="btn btn-secondary btn-icon-only">SOF</button></a>
+                                <a href= "./freamwork/SOR.html" <button type="button" class="btn btn-secondary btn-icon-only">SOR</button></a>
+                            </div>
+                            <br/>                            
+                            <div class="btn-container">
+                                <a href= "./freamwork/SOS.html" <button type="button" class="btn btn-secondary btn-icon-only">SOS</button></a>
+                                <a href= "./freamwork/SOV.html" <button type="button" class="btn btn-secondary btn-icon-only">SOV</button></a>
+                                <a href= "./freamwork/SSF.html" <button type="button" class="btn btn-secondary btn-icon-only">SSF</button></a>
+                                <a href= "./freamwork/SSO.html" <button type="button" class="btn btn-secondary btn-icon-only">SSO</button></a>
+                                <a href= "./freamwork/SSY.html" <button type="button" class="btn btn-secondary btn-icon-only">SSY</button></a>
+                                <a href= "./freamwork/STF.html" <button type="button" class="btn btn-secondary btn-icon-only">STF</button></a>
+                                <a href= "./freamwork/STI.html" <button type="button" class="btn btn-secondary btn-icon-only">STI</button></a>
+                                <a href= "./freamwork/STO.html" <button type="button" class="btn btn-secondary btn-icon-only">STO</button></a>
+                                <a href= "./freamwork/STT.html" <button type="button" class="btn btn-secondary btn-icon-only">STT</button></a>
+                                <a href= "./freamwork/STW.html" <button type="button" class="btn btn-secondary btn-icon-only">STW</button></a>
+                                <a href= "./freamwork/SVR.html" <button type="button" class="btn btn-secondary btn-icon-only">SVR</button></a>
+                                <a href= "./freamwork/SVV.html" <button type="button" class="btn btn-secondary btn-icon-only">SVV</button></a>
+                                <a href= "./freamwork/SVY.html" <button type="button" class="btn btn-secondary btn-icon-only">SVY</button></a>
+                                <a href= "./freamwork/SWY.html" <button type="button" class="btn btn-secondary btn-icon-only">SWY</button></a>
+                                <a href= "./freamwork/SYT.html" <button type="button" class="btn btn-secondary btn-icon-only">SYT</button></a>
+                                <a href= "./freamwork/SZR.html" <button type="button" class="btn btn-secondary btn-icon-only">SZR</button></a>
+                                <a href= "./freamwork/TER.html" <button type="button" class="btn btn-secondary btn-icon-only">TER</button></a>
+                                <a href= "./freamwork/THO.html" <button type="button" class="btn btn-secondary btn-icon-only">THO</button></a>
+                            </div>
+                            <br/>                            
+                            <div class="btn-container">
+                                <a href= "./freamwork/TOL.html" <button type="button" class="btn btn-secondary btn-icon-only">TOL</button></a>
+                                <a href= "./freamwork/TON.html" <button type="button" class="btn btn-primary btn-icon-only">TON</button></a>
+                                <a href= "./freamwork/TSC.html" <button type="button" class="btn btn-secondary btn-icon-only">TSC</button></a>
+                                <a href= "./freamwork/TUN.html" <button type="button" class="btn btn-secondary btn-icon-only">TUN</button></a>
+                                <a href= "./freamwork/UEI.html" <button type="button" class="btn btn-secondary btn-icon-only">UEI</button></a>
+                                <a href= "./freamwork/UFI.html" <button type="button" class="btn btn-primary btn-icon-only">UFI</button></a>
+                                <a href= "./freamwork/UOE.html" <button type="button" class="btn btn-primary btn-icon-only">UOE</button></a>
+                                <a href= "./freamwork/UOS.html" <button type="button" class="btn btn-secondary btn-icon-only">UOS</button></a>
+                                <a href= "./freamwork/UOV.html" <button type="button" class="btn btn-secondary btn-icon-only">UOV</button></a>
+                                <a href= "./freamwork/UOZ.html" <button type="button" class="btn btn-secondary btn-icon-only">UOZ</button></a>
+                                <a href= "./freamwork/USI.html" <button type="button" class="btn btn-secondary btn-icon-only">USI</button></a>
+                                <a href= "./freamwork/UTL.html" <button type="button" class="btn btn-secondary btn-icon-only">UTL</button></a>
+                                <a href= "./freamwork/UWY.html" <button type="button" class="btn btn-secondary btn-icon-only">UWY</button></a>
+                                <a href= "./freamwork/VET.html" <button type="button" class="btn btn-secondary btn-icon-only">VET</button></a>
+                                <a href= "./freamwork/VFI.html" <button type="button" class="btn btn-secondary btn-icon-only">VFI</button></a>
+                                <a href= "./freamwork/VNI.html" <button type="button" class="btn btn-secondary btn-icon-only">VNI</button></a>
+                                <a href= "./freamwork/VSV.html" <button type="button" class="btn btn-secondary btn-icon-only">VSV</button></a>
+                                <a href= "./freamwork/WEI.html" <button type="button" class="btn btn-secondary btn-icon-only">WEI</button></a>
+                            </div>
+                            <br/>
+                            <div>
+                                <a href= "./freamwork/WEN.html" <button type="button" class="btn btn-secondary btn-icon-only">WEN</button></a>
+                                <a href= "./freamwork/YFI.html" <button type="button" class="btn btn-secondary btn-icon-only">YFI</button></a>
+                                <a href= "./freamwork/YUG.html" <button type="button" class="btn btn-secondary btn-icon-only">YUG</button></a>
+                                <a href= "./freamwork/ZON.html" <button type="button" class="btn btn-secondary btn-icon-only">ZON</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="position-relative" id="footer-main">
+        <div class="footer pt-lg-7 footer-dark bg-dark">
+            <!-- SVG shape -->
+            <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+                <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px"
+                    viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve"
+                    class=" fill-section-secondary">
+                    <polygon points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+            <!-- Footer -->
+            <div class="container pt-4">
+                <div class="row">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <!-- Theme's logo -->
+                        <a href="index.html">
+                            <img alt="Image placeholder" src="assets/img/brand/light.svg" id="footer-logo">
+                        </a>
+                        <!-- Webpixels' mission -->
+                        <p class="mt-4 text-sm opacity-8 pr-lg-4">Webpixels attempts to bring the best development
+                            experience to designers and developers by offering the tools needed for having a quick and
+                            solid start in most web projects.</p>
+                        <!-- Social -->
+                        <ul class="nav mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link pl-0" href="https://dribbble.com/webpixels" target="_blank">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/webpixels" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.instagram.com/webpxs" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.facebook.com/webpixels" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Account</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Billing</a></li>
+                            <li><a href="#">Notifications</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">About</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-6 col-sm-4 mb-5 mb-lg-0">
+                        <h6 class="heading mb-3">Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="divider divider-fade divider-dark my-4">
+                <div class="row align-items-center justify-content-md-between pb-4">
+                    <div class="col-md-6">
+                        <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                            &copy; 2020 <a href="https://webpixels.io" class="font-weight-bold"
+                                target="_blank">Webpixels</a>. All rights reserved
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Terms
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Privacy
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cookies
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+    <script>
+        const form = document.getElementById("molecular-sieve-form");
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault(); // 阻止默认提交行为
+  
+          const select = document.getElementById("molecular-sieve");
+          const value = select.value;
+          if (value === "") {
+          // 如果没有选择分子筛，弹出提示框
+          alert("Please choose a framework type code first!");
+        } else {
+          // 否则，跳转到对应的HTML文件
+          window.location.href = `./freamwork/${value}.html`;
+        }
+        });
+      </script>
+</body>
+
+</html>
