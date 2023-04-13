@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Webpixels">
+    <title>SZR</title>
+    <!-- Preloader -->
+    <style>
+        @keyframes hidePreloader {
+            0% {
+                width: 100%;
+                height: 100%;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+            }
+        }
+
+        body>div.preloader {
+            position: fixed;
+            background: white;
+            width: 100%;
+            height: 100%;
+            z-index: 1071;
+            opacity: 0;
+            transition: opacity .5s ease;
+            overflow: hidden;
+            pointer-events: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        body:not(.loaded)>div.preloader {
+            opacity: 1;
+        }
+
+        body:not(.loaded) {
+            overflow: hidden;
+        }
+
+        body.loaded>div.preloader {
+            animation: hidePreloader .5s linear .5s forwards;
+        }
+    </style>
+    <script>
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                document.querySelector('body').classList.add('loaded');
+            }, 300);
+        });
+        function onTopClick() {
+            window.location.hash = "#abc";
+        }
+        jump.onclick = function(){
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="../../assets/img/brand/favicon.png" type="image/png"><!-- Font Awesome -->
+    <link rel="stylesheet" href="../assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <!-- Quick CSS -->
+    <link rel="stylesheet" href="../assets/css/quick-website.css" id="stylesheet">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-cookies" data-backdrop="false"
+        aria-labelledby="modal-cookies" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+            <div class="modal-content bg-dark-dark">
+                <div class="modal-body">
+                    <!-- Text -->
+                    <p class="text-sm text-white mb-3">
+                        We use cookies so that our themes work for you. By using our website, you agree to our use of
+                        cookies.
+                    </p>
+                    <!-- Buttons -->
+                    <a href="../pages/utility/terms.html" class="btn btn-sm btn-white" target="_blank">Learn more</a>
+                    <button type="button" class="btn btn-sm btn-primary mr-2" data-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand" href="../index.html">
+                <img alt="Image placeholder" src="../assets/img/brand/logo1.png" id="navbar-logo" width="100px" height="80px">
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../pred.html">Products Prediction</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">Data Extraction</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../docs/index.html">Text Classification</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../about.html">About us</a>
+                    </li>
+                <div class="d-lg-none text-center">
+                    <a href="https://webpixels.io/themes/quick-website-ui-kit"
+                        class="btn btn-block btn-sm btn-warning">See more details</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <section class="slice slice-sl">
+        <div class="container">
+            <div class="py-6">
+                <div class="row row-grid justify-content-between align-items-center">
+                    <div class="col-lg-5">
+                        <h3>SZR</h3>
+                        <p class="lead my-4">
+                            Put some introduction, properties or pictures of zeolites here.
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body py-5">
+                                <div class="d-flex align-items-center">
+                                    <div class="h6 mb-0">
+                                        <span class="h6 mb-0">Framework (FD<sub>Si</sub>):</span>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <!-- 通过style修改input宽高，通过value设置默认值-->
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:80px;"
+                                            value=17.6 disabled>
+                                        <span>T/1000 Å &nbsp;&nbsp;&nbsp;</span>
+                                    </form>
+                                </div>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div>
+                                        <div class="h6 mb-0">
+                                            <span class="h6 mb-0">Largest Ring sizes:</span>
+                                            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                        </div>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <!-- 通过style修改input宽高，通过value设置默认值-->
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:50px;"
+                                            value=10 disabled>
+                                    </form>
+                                </div>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="h6 mb-0">
+                                        <span class="h6 mb-0">Channel dimensionality:</span>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <!-- 通过style修改input宽高，通过value设置默认值-->
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:80px;"
+                                            value=3 disabled>
+                                        <span>dimensional &nbsp;&nbsp;&nbsp;</span>
+                                    </form>
+                                </div>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="h6 mb-0">
+                                        <span class="h6 mb-0">Maximum diameter of a sphere (that can be
+                                            included):</span>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <!-- 通过style修改input宽高，通过value设置默认值-->
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:80px;"
+                                            value=6.27 disabled>
+                                        <span>Å</span>
+                                    </form>
+                                </div>
+                                <br>
+                                <div class="d-flex align-items-center">
+                                    <div class="h6 mb-0">
+                                        <span class="h6 mb-0">Maximum diameter of a sphere (that can diffuse
+                                            along):</span>
+                                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                                    </div>
+                                    <form class="form-inline my-2 my-lg-0">
+                                        <!-- 通过style修改input宽高，通过value设置默认值-->
+                                        <span class="h6 mb-0">a:&nbsp;&nbsp;</span>
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:70px;"
+                                            value=3.32 disabled>
+                                        <span>Å&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="h6 mb-0">b:&nbsp;&nbsp;</span>
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:70px;"
+                                            value=3.32 disabled>
+                                        <span>Å&nbsp;&nbsp;&nbsp;</span>
+                                        <span class="h6 mb-0">c:&nbsp;&nbsp;</span>
+                                        <input class="form-control form-control-sm mr-sm-1" style="width:70px;"
+                                            value=4.69 disabled>
+                                        <span>Å&nbsp;&nbsp;&nbsp;</span>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9">
+                        <h3 class="heading h2 text-uppercase text-primary mt-5 mb-4">Samples</h3>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 type="button" style="color:blueviolet" class="heading h6 text-capitalize mt-6 mb-4" data-toggle="modal" data-target="#modal_1">
+                            ★ View parameter descriptions
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- Modal -->
+                    <div class="modal modal-fluid fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="modal_1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-12 text-center py-6">
+                                            <h4 class="heading h3">Parameter Description</h4>
+                                            <table class="table">
+                                                <thead class="thead-light">
+                                                    <tr align="center">
+                                                        <th scope="col"><span class="h6 mb-0" size="3">Name of parameters</span></th>
+                                                        <th scope="col"><span class="h6 mb-0" size="3">Meaning</span></th>
+                                                <tbody>
+                                                    <tr align="center">
+                                                        <th scope="row">ZeoType</th>
+                                                        <th scope="row">Framework types of the zeolites</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">Material</th>
+                                                        <th scope="row">Names of the zeolites</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">Modification</th>
+                                                        <th scope="row">Index of whether the zeolite is modified, where "0" implies no modification and "1" implies that the zeolite is modified</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">AS</th>
+                                                        <th scope="row">Acid strength of zeolites, where "0" implies the acid strength of SAPO zeolites, and "1" implies that of other zeolites</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">A/T</th>
+                                                        <th scope="row">Acid density of zeolites, which of SAPO zeolites is recorded as Si/(Al+P+Si), and other are recorded as Al/(Al+Si)</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">CS</th>
+                                                        <th scope="row">Crystal sizes of zeolites, which are given in μm</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">RT</th>
+                                                        <th scope="row">Reaction tempretures, which are given in °C</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">WHSV</th>
+                                                        <th scope="row">Weight hour space velocity, which are given in h<sup>-1</sup></th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">TOS</th>
+                                                        <th scope="row">Time of stream, which is given in minutes</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">Conversion</th>
+                                                        <th scope="row">Methanol conversion, which is given in %</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">Stotal</th>
+                                                        <th scope="row">Selectivities to ethylene plus propylene, which is given in %</th>
+                                                    </tr>
+                                                    <tr align="center">
+                                                        <th scope="row">P/E</th>
+                                                        <th scope="row">Ratio of Selectivities to propylene and ethylene</th>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">I understand</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead class="thead-light">
+                        <tr align="center">
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Framework types of the zeolites">
+                                    ZeoType
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Names of the zeolites">
+                                    Material
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" 
+                                title="0 : no modification
+1 : modified">
+                                    Modification
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Acid strength of zeolites
+0 : SAPO 
+1 : other zeolites">
+                                    AS
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="Acid density of zeolites
+SAPO : Si/(Al+P+Si)
+other zeolites: Al/(Al+Si)">
+                                    A/T
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Crystal sizes of zeolites (μm)">
+                                    CS
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Reaction tempretures (°C)">
+                                    RT
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Weight hour space velocity (h^-1)">
+                                    WHSV
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Time of stream (min)">
+                                    TOS
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Methanol conversion (%)">
+                                    Conversion
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Selectivities to ethylene plus propylene (%)">
+                                    Stotal
+                                </span>
+                            </th>
+                            <th scope="col">
+                                <span class="h6 mb-0" size="3" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Ratio of Selectivities to propylene and ethylene">
+                                    P/E
+                                </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>SAPO</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.04</td>
+                            <td>5.0</td>
+                            <td>450</td>
+                            <td>2</td>
+                            <td>174</td>
+                            <td>≤ 98</td>
+                            <td>40.83733601</td>
+                            <td>1.3504474569999998</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>SAPO</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.04</td>
+                            <td>5.0</td>
+                            <td>500</td>
+                            <td>2</td>
+                            <td>361</td>
+                            <td>≤ 98</td>
+                            <td>44.88395039</td>
+                            <td>1.3767001380000001</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.02</td>
+                            <td>5.0</td>
+                            <td>380</td>
+                            <td>2</td>
+                            <td>38</td>
+                            <td>> 98</td>
+                            <td>32.58668176</td>
+                            <td>0.721525787</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.02</td>
+                            <td>5.0</td>
+                            <td>400</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>> 98</td>
+                            <td>36.53003581</td>
+                            <td>0.756705223</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.05</td>
+                            <td>0.5</td>
+                            <td>400</td>
+                            <td>2</td>
+                            <td>55</td>
+                            <td>> 98</td>
+                            <td>31.2564506</td>
+                            <td>0.471629096</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.1</td>
+                            <td>5.0</td>
+                            <td>450</td>
+                            <td>2</td>
+                            <td>327</td>
+                            <td>≤ 98</td>
+                            <td>29.81752074</td>
+                            <td>1.122487561</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>SAPO</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.16</td>
+                            <td>5.0</td>
+                            <td>500</td>
+                            <td>2</td>
+                            <td>208</td>
+                            <td>≤ 98</td>
+                            <td>37.14247893</td>
+                            <td>1.037028647</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.005</td>
+                            <td>5.0</td>
+                            <td>450</td>
+                            <td>2</td>
+                            <td>106</td>
+                            <td>> 98</td>
+                            <td>50.75130317</td>
+                            <td>7.732316679</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>SAPO</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0.04</td>
+                            <td>0.5</td>
+                            <td>380</td>
+                            <td>2</td>
+                            <td>106</td>
+                            <td>≤ 98</td>
+                            <td>30.60800078</td>
+                            <td>0.741787788</td>
+                        </tr>
+                        <tr align="center">
+                            <th scope="row">SZR</th>
+                            <td>zeolite</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.002</td>
+                            <td>0.5</td>
+                            <td>500</td>
+                            <td>2</td>
+                            <td>106</td>
+                            <td>> 98</td>
+                            <td>49.0369717</td>
+                            <td>3.583527143</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+    </section>
+    <!-- Core JS  -->
+    <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="../assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="../assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+        feather.replace({
+            'width': '1em',
+            'height': '1em'
+        })
+    </script>
+    <script>
+        // 获取modal弹窗
+        var myModal = document.getElementById('exampleModal');
+        // 获取关闭modal的按钮
+        var closeModalBtn = document.getElementById('closeModal');
+        
+        // 给关闭按钮绑定事件
+        closeModalBtn.addEventListener('click', function() {
+          // 隐藏modal弹窗
+          $(myModal).modal('hide');
+        });
+      </script>
+</body>
+
+
+</html>
